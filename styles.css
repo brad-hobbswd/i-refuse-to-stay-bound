@@ -38,3 +38,28 @@ button:not(.menu-toggle):hover, input[type="button"]:hover, input[type="submit"]
 button:not(.menu-toggle):focus-visible, input[type="button"]:focus-visible, input[type="submit"]:focus-visible, input[type="reset"]:focus-visible, .button:focus-visible, a[role="button"]:focus-visible{outline:3px solid var(--gold);outline-offset:3px;box-shadow:0 0 0 2px var(--deep)}
 button:not(.menu-toggle):active, input[type="button"]:active, input[type="submit"]:active, input[type="reset"]:active, .button:active{transform:translateY(0);box-shadow:inset 0 2px 4px rgba(59,7,10,.18)}
 button:disabled, input:disabled{opacity:.55;cursor:not-allowed}
+
+/* Connected chapter reading experience and consistent chapter directory cards */
+.breadcrumbs{max-width:1160px;margin:0 auto;padding:16px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:10px;font:600 .82rem var(--sans);color:var(--muted);border-bottom:1px solid #ead9b8}
+.breadcrumbs a{color:#805412;text-underline-offset:4px}
+.breadcrumbs [aria-current="page"]{color:var(--burgundy);font-weight:700}
+.chapter-card{padding:26px 28px;margin:18px 0;background:#fffaf0;border:1px solid #dfc17f;border-left:4px solid var(--gold);border-radius:5px;box-shadow:0 5px 18px rgba(59,7,10,.06);scroll-margin-top:24px}
+.chapter-card h3{margin:0 0 10px;color:var(--burgundy);font-size:1.45rem;line-height:1.25}
+.chapter-card p:not(.eyebrow){margin:0 0 16px}
+.chapter-card .eyebrow{margin-bottom:8px}
+.chapter-card .button{margin-top:2px}
+.chapter-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:22px}
+.chapter-list .chapter-card{margin:0;height:100%}
+.chapter-index{display:flex;flex-wrap:wrap;gap:9px;margin:16px 0 30px}
+.chapter-index .button{min-width:104px}
+.intro-card{background:linear-gradient(135deg,#fffaf0,#f4e7cb)}
+.manuscript{max-width:900px}
+.manuscript .manuscript-title{text-align:center;padding:0 0 1.4rem;border-bottom:1px solid #dfc17f;margin-bottom:2rem}
+.manuscript .manuscript-title h2{font-size:clamp(1.65rem,3vw,2.3rem);margin:.3rem 0 0}
+.manuscript h2{margin-top:2.5rem}
+.manuscript h3{color:var(--burgundy);margin-top:2rem}
+.manuscript p{line-height:1.9;margin:0 0 1.35rem}
+.manuscript li{margin-bottom:.65rem;line-height:1.75}
+.manuscript-nav{display:flex;flex-wrap:wrap;gap:12px;margin-top:2.5rem}
+.manuscript-nav .button{flex:1 1 210px}
+@media(max-width:720px){.chapter-list{grid-template-columns:1fr}.chapter-card{padding:22px 20px}.breadcrumbs{padding:13px 18px}.manuscript-nav{display:grid}.manuscript-nav .button{width:100%}}
