@@ -39,39 +39,41 @@
         and the freedom found in Jesus Christ.
       </p>
     </section>
-    <section class="chapter-jump-section" aria-labelledby="jump-to-chapters-heading">
+    <section class="chapter-jump-section" aria-labelledby="chapter-selector-heading">
       <div class="chapter-jump-inner">
-      <h2 id="jump-to-chapters-heading">Jump to a Chapter</h2>
-      <p class="chapter-index-intro">
-        Choose a chapter to jump directly to its overview, or open the complete manuscript where available.
-      </p>
-      <nav class="chapter-index" aria-label="Jump to a chapter">
-        <a class="button button-gold" href="#introduction">Introduction</a>
-        <a class="button button-gold" href="chapter-1.html">Read Chapter 1 →</a>
-        <a class="button button-burgundy" href="#chapter-2">Chapter 2</a>
-        <a class="button button-burgundy" href="#chapter-3">Chapter 3</a>
-        <a class="button button-burgundy" href="#chapter-4">Chapter 4</a>
-        <a class="button button-burgundy" href="#chapter-5">Chapter 5</a>
-        <a class="button button-burgundy" href="#chapter-6">Chapter 6</a>
-        <a class="button button-burgundy" href="#chapter-7">Chapter 7</a>
-        <a class="button button-burgundy" href="#chapter-8">Chapter 8</a>
-        <a class="button button-burgundy" href="#chapter-9">Chapter 9</a>
-        <a class="button button-burgundy" href="#chapter-10">Chapter 10</a>
-        <a class="button button-burgundy" href="#chapter-11">Chapter 11</a>
-        <a class="button button-burgundy" href="#chapter-12">Chapter 12</a>
-        <a class="button button-burgundy" href="#chapter-13">Chapter 13</a>
-        <a class="button button-burgundy" href="#chapter-14">Chapter 14</a>
-        <a class="button button-burgundy" href="#chapter-15">Chapter 15</a>
-        <a class="button button-burgundy" href="#chapter-16">Chapter 16</a>
-        <a class="button button-burgundy" href="#chapter-17">Chapter 17</a>
-        <a class="button button-burgundy" href="#chapter-18">Chapter 18</a>
-        <a class="button button-burgundy" href="#chapter-19">Chapter 19</a>
-        <a class="button button-burgundy" href="#chapter-21">Chapter 21</a>
-        <a class="button button-burgundy" href="#chapter-22">Chapter 22</a>
-        <a class="button button-burgundy" href="#chapter-24">Chapter 24</a>
-        <a class="button button-burgundy" href="#chapter-25">Chapter 25</a>
-        <a class="button button-burgundy" href="#chapter-27">Chapter 27</a>
-      </nav>
+        <label class="chapter-selector-label" id="chapter-selector-heading" for="chapter-selector">Find a chapter</label>
+        <p class="chapter-index-intro">Select the introduction or a chapter to open it or jump to its place in the directory.</p>
+        <div class="chapter-selector-row">
+          <select id="chapter-selector" class="chapter-selector" aria-describedby="chapter-selector-help">
+            <option value="">Choose a section…</option>
+            <option value="introduction.html">Introduction · The Decision to Walk in Freedom</option>
+            <option value="#chapter-2">Chapter 2 · Betrayed by Those You Trusted</option>
+            <option value="#chapter-3">Chapter 3 · The Silence That Protects the Wrong Things</option>
+            <option value="#chapter-4">Chapter 4 · The Poison of Bitterness</option>
+            <option value="#chapter-5">Chapter 5 · When Forgiveness Feels Impossible</option>
+            <option value="#chapter-6">Chapter 6 · The Trap of Playing God</option>
+            <option value="#chapter-7">Chapter 7 · The Church Must Repent Before It Can Heal</option>
+            <option value="#chapter-8">Chapter 8 · When the Wounded Become the Wounders</option>
+            <option value="#chapter-9">Chapter 9 · Forgiveness and Reconciliation</option>
+            <option value="#chapter-10">Chapter 10 · Setting Boundaries Without Guilt</option>
+            <option value="#chapter-11">Chapter 11 · When Apologies Are Not Enough</option>
+            <option value="#chapter-12">Chapter 12 · The Danger of Spiritual Manipulation</option>
+            <option value="#chapter-13">Chapter 13 · Healing When the Church Has Become the Wound</option>
+            <option value="#chapter-14">Chapter 14 · The Courage to Trust Again</option>
+            <option value="#chapter-15">Chapter 15 · When God Restores What Betrayal Tried to Destroy</option>
+            <option value="#chapter-16">Chapter 16 · The Prison of Remembering</option>
+            <option value="#chapter-17">Chapter 17 · Letting Go of What You Cannot Change</option>
+            <option value="#chapter-18">Chapter 18 · The Lies We Believe After Betrayal</option>
+            <option value="#chapter-19">Chapter 19 · When Forgiveness Meets Justice</option>
+            <option value="#chapter-21">Chapter 21 · The Battle Between the Wound and the Word</option>
+            <option value="#chapter-22">Chapter 22 · Breaking the Chains of Shame</option>
+            <option value="#chapter-24">Chapter 24 · When People Misunderstand Your Healing</option>
+            <option value="#chapter-25">Chapter 25 · Rebuilding Your Life After the Battle</option>
+            <option value="#chapter-27">Chapter 27 · The Church Must Become a Place of Healing</option>
+          </select>
+          <button class="button button-burgundy" type="button" id="chapter-selector-go">Go to Selection</button>
+        </div>
+        <p class="chapter-selector-help" id="chapter-selector-help">The Introduction opens as a full reading page. Other listed chapters jump to their directory entry. Full manuscript pages will be linked when available.</p>
       </div>
     </section>
     <section class="content">
@@ -81,12 +83,6 @@
         <h3>The Decision to Walk in Freedom</h3>
         <p>Begin with the complete introduction to the book’s message of forgiveness, accountability, healing, and freedom in Jesus Christ.</p>
         <a class="button button-burgundy" href="introduction.html">Read the Complete Introduction →</a>
-      </article>
-      <article class="chapter-card" id="chapter-1">
-        <p class="eyebrow">Chapter 1</p>
-        <h3>When the Wound Comes from the House of God</h3>
-        <p>Read the complete chapter manuscript, including the full teaching, chapter conclusion, key Scriptures, discussion questions, personal reflection, and closing prayer.</p>
-        <a class="button button-burgundy" href="chapter-1.html">Read the Complete Chapter 1 →</a>
       </article>
       <h2>Explore the Written Chapters</h2>
       <p>
@@ -104,13 +100,16 @@
         help you identify a topic for discussion.
       </p>
       <div class="notice">
-        <strong>Manuscript status:</strong>
-        This index lists the chapter entries currently included on this page.
-        Chapter 28, “Freedom That Must Be Lived,” is intentionally excluded.
-        Chapter 1 is available as a complete online manuscript. The other chapter
-        entries remain reading guides until their full manuscript pages are published.
+        <strong>Reading note:</strong>
+        The Introduction is available as a complete reading page. Chapter entries are organized equally below; use each entry to find its topic. Full manuscript links will be added as the original chapters are prepared. Chapter 28, “Freedom That Must Be Lived,” is intentionally excluded.
       </div>
       <div class="chapter-list">
+        <article class="chapter-card" id="chapter-1">
+          <p class="eyebrow">Chapter 1</p>
+          <h3>When the Wound Comes from the House of God</h3>
+          <p>Explore the chapter on spiritual wounds, truth, accountability, and the freedom Jesus Christ offers.</p>
+          <a class="text-link" href="chapter-1.html">Read the available full manuscript →</a>
+        </article>
         <article class="chapter-card" id="chapter-2">
           <p class="eyebrow">Chapter 2</p>
           <h3>Betrayed by Those You Trusted</h3>
