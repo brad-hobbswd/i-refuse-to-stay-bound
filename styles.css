@@ -63,3 +63,17 @@ button:disabled, input:disabled{opacity:.55;cursor:not-allowed}
 .manuscript-nav{display:flex;flex-wrap:wrap;gap:12px;margin-top:2.5rem}
 .manuscript-nav .button{flex:1 1 210px}
 @media(max-width:720px){.chapter-list{grid-template-columns:1fr}.chapter-card{padding:22px 20px}.breadcrumbs{padding:13px 18px}.manuscript-nav{display:grid}.manuscript-nav .button{width:100%}}
+
+
+/* Chapter jump navigation: placed immediately below the page hero and responsive across devices */
+.chapter-jump-section{background:#f4e7cb;border-bottom:1px solid #dfc17f;padding:22px 0 26px}
+.chapter-jump-inner{max-width:1160px;margin:0 auto;padding:0 24px}
+.chapter-jump-inner h2{margin:0 0 8px;color:var(--burgundy);font-size:clamp(1.35rem,2.6vw,1.8rem);line-height:1.2}
+.chapter-jump-inner .chapter-index-intro{margin:0 0 14px;color:var(--muted);font-size:1rem}
+.chapter-jump-inner .chapter-index{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin:0}
+.chapter-jump-inner .chapter-index .button{width:100%;min-width:0;min-height:44px;padding:11px 8px;text-align:center;white-space:normal;font-size:.74rem}
+.chapter-jump-inner .chapter-index .button-gold{background:var(--gold);color:var(--deep);border-color:var(--gold-light)}
+.chapter-jump-inner .chapter-index .button-gold:hover,.chapter-jump-inner .chapter-index .button-gold:focus-visible{background:var(--gold-light);color:var(--deep)}
+@media(max-width:1000px){.chapter-jump-inner .chapter-index{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:620px){.chapter-jump-section{padding:18px 0 20px}.chapter-jump-inner{padding:0 16px}.chapter-jump-inner .chapter-index{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.chapter-jump-inner .chapter-index .button{font-size:.68rem;letter-spacing:.015em;padding:10px 5px;min-height:46px}}
+@media(max-width:360px){.chapter-jump-inner .chapter-index{grid-template-columns:repeat(2,minmax(0,1fr))}}
