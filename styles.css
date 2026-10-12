@@ -95,3 +95,59 @@ button:disabled, input:disabled{opacity:.55;cursor:not-allowed}
 .chapter-list .chapter-card p:not(.eyebrow){flex:1}
 .chapter-list .chapter-card .text-link{margin-top:6px}
 @media(max-width:560px){.chapter-jump-section{padding:20px 0 22px}.chapter-jump-inner{padding:0 16px}.chapter-selector-row{display:grid;grid-template-columns:1fr}.chapter-selector-row .button{width:100%}#introduction{padding:24px 20px}}
+
+
+/* Definitive site-wide button theme rules.
+   These selectors intentionally outrank generic button and content-link rules above. */
+a.button.button-gold,
+.content a.button.button-gold,
+button.button.button-gold:not(.menu-toggle),
+a.button.button-gold:visited {
+  background: var(--gold);
+  color: var(--deep);
+  border-color: var(--gold-light);
+}
+a.button.button-light,
+.content a.button.button-light,
+button.button.button-light:not(.menu-toggle),
+a.button.button-light:visited {
+  background: var(--cream);
+  color: var(--burgundy);
+  border-color: var(--gold);
+}
+a.button.button-burgundy,
+.content a.button.button-burgundy,
+button.button.button-burgundy:not(.menu-toggle),
+a.button.button-burgundy:visited {
+  background: var(--burgundy);
+  color: var(--cream);
+  border-color: var(--gold);
+}
+a.button.button-gold:hover,
+a.button.button-gold:focus-visible,
+button.button.button-gold:not(.menu-toggle):hover,
+button.button.button-gold:not(.menu-toggle):focus-visible {
+  background: var(--gold-light);
+  color: var(--deep);
+  border-color: var(--gold);
+}
+a.button.button-light:hover,
+a.button.button-light:focus-visible,
+button.button.button-light:not(.menu-toggle):hover,
+button.button.button-light:not(.menu-toggle):focus-visible {
+  background: #fffdf7;
+  color: var(--burgundy);
+  border-color: var(--gold);
+}
+a.button.button-burgundy:hover,
+a.button.button-burgundy:focus-visible,
+button.button.button-burgundy:not(.menu-toggle):hover,
+button.button.button-burgundy:not(.menu-toggle):focus-visible {
+  background: var(--deep);
+  color: var(--gold-light);
+  border-color: var(--gold-light);
+}
+.content a.button,
+.content a.button:visited {
+  text-decoration: none;
+}
