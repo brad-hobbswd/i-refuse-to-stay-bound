@@ -77,3 +77,21 @@ button:disabled, input:disabled{opacity:.55;cursor:not-allowed}
 @media(max-width:1000px){.chapter-jump-inner .chapter-index{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:620px){.chapter-jump-section{padding:18px 0 20px}.chapter-jump-inner{padding:0 16px}.chapter-jump-inner .chapter-index{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.chapter-jump-inner .chapter-index .button{font-size:.68rem;letter-spacing:.015em;padding:10px 5px;min-height:46px}}
 @media(max-width:360px){.chapter-jump-inner .chapter-index{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+
+/* Calm, consistent chapter navigation: one compact selector instead of a wall of buttons */
+.chapter-jump-section{background:linear-gradient(135deg,#f8eed8,#f1dfb8);border-bottom:1px solid #dfc17f;padding:26px 0 30px}
+.chapter-jump-inner{max-width:980px;margin:0 auto;padding:0 24px}
+.chapter-selector-label{display:block;color:var(--burgundy);font:700 1.35rem var(--serif);margin-bottom:5px}
+.chapter-jump-inner .chapter-index-intro{margin:0 0 14px;color:var(--muted);font-size:.98rem}
+.chapter-selector-row{display:flex;align-items:stretch;gap:12px;max-width:800px}
+.chapter-selector{flex:1;min-width:0;min-height:50px;padding:12px 42px 12px 14px;border:1px solid #b98a32;border-radius:4px;background:#fffaf0;color:var(--ink);font:1rem var(--sans)}
+.chapter-selector:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.chapter-selector-row .button{min-height:50px;white-space:nowrap;cursor:pointer}
+.chapter-selector-help{max-width:800px;margin:10px 0 0;color:var(--muted);font: .82rem/1.5 var(--sans)}
+#introduction{border-left-width:6px;padding:30px 32px;background:linear-gradient(120deg,#fffaf0,#f5e4bd)}
+#introduction h3{font-size:clamp(1.55rem,3vw,2rem)}
+.chapter-list .chapter-card{display:flex;flex-direction:column;align-items:flex-start}
+.chapter-list .chapter-card p:not(.eyebrow){flex:1}
+.chapter-list .chapter-card .text-link{margin-top:6px}
+@media(max-width:560px){.chapter-jump-section{padding:20px 0 22px}.chapter-jump-inner{padding:0 16px}.chapter-selector-row{display:grid;grid-template-columns:1fr}.chapter-selector-row .button{width:100%}#introduction{padding:24px 20px}}
