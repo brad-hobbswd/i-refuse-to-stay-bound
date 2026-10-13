@@ -12,7 +12,7 @@ The official website for this Christian book project, exploring offense, bittern
 
 ## About
 
-The website introduces the heart behind the book, its message, the author, and publication updates. Teaching, reflections, prayers, affirmations, and practical application are woven into the manuscript itself.
+The website introduces the heart behind the book, its message, the author, and publication updates. Teaching, reflections, prayers, affirmations, and practical application are woven into the chapters themselves.
 
 The book is original work by Bradley Hobbs. *The Bait of Satan* by John Bevere is acknowledged as an inspiration for further reflection on offense and forgiveness, not as the source text for this book.
 
