@@ -233,3 +233,13 @@ button.button.button-burgundy:not(.menu-toggle):focus-visible {
  .manuscript-nav{grid-template-columns:repeat(2,minmax(0,1fr))}
  .manuscript-nav .button:last-child:nth-child(odd){grid-column:1/-1}
 }
+
+
+/* Chapter 6 text styling: clearer hierarchy and emphasis without changing manuscript wording. */
+.content.manuscript .manuscript-title .subtitle{color:var(--muted);font-family:var(--serif);font-size:clamp(1.05rem,2vw,1.25rem);font-style:italic;line-height:1.5;margin:.65rem auto 0;max-width:680px;text-shadow:none}
+.content.manuscript>h2{padding-bottom:.45rem;border-bottom:1px solid rgba(201,154,61,.38)}
+.content.manuscript>h3{letter-spacing:.01em}
+.content.manuscript strong{color:var(--burgundy);font-weight:700}
+.content.manuscript em{color:#5d3430}
+.content.manuscript p{overflow-wrap:break-word}
+@media(max-width:620px){.content.manuscript>h2{margin-top:2.1rem;padding-bottom:.4rem}}
