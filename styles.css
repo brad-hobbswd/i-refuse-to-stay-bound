@@ -153,11 +153,6 @@ button.button.button-burgundy:not(.menu-toggle):focus-visible {
 }
 
 
-/* Consistent manuscript navigation: the forward action is the gold accent. */
-.manuscript-nav a.button:nth-child(3) { background: var(--gold); color: var(--deep); border-color: var(--gold-light); }
-.manuscript-nav a.button:nth-child(3):visited { background: var(--gold); color: var(--deep); border-color: var(--gold-light); }
-.manuscript-nav a.button:nth-child(3):hover,
-.manuscript-nav a.button:nth-child(3):focus-visible { background: var(--gold-light); color: var(--deep); border-color: var(--gold); }
 
 
 /* Shared manuscript layout for every chapter page. */
