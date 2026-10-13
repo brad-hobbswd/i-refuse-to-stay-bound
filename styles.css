@@ -158,3 +158,15 @@ button.button.button-burgundy:not(.menu-toggle):focus-visible {
 .manuscript-nav a.button:nth-child(3):visited { background: var(--gold); color: var(--deep); border-color: var(--gold-light); }
 .manuscript-nav a.button:nth-child(3):hover,
 .manuscript-nav a.button:nth-child(3):focus-visible { background: var(--gold-light); color: var(--deep); border-color: var(--gold); }
+
+
+/* Shared manuscript layout for every chapter page. */
+.manuscript{max-width:900px}
+.manuscript p{line-height:1.9;margin:0 0 1.35rem}
+.manuscript h2{margin-top:2.5rem}
+.manuscript h3{color:var(--burgundy);margin-top:2rem}
+.manuscript-title{text-align:center;border-bottom:1px solid #dfc17f;padding-bottom:1.4rem;margin-bottom:2rem}
+.manuscript .manuscript-title h2{font-size:clamp(1.65rem,3vw,2.3rem);margin:.3rem 0 0}
+.manuscript-nav{display:flex;flex-wrap:wrap;gap:12px;margin-top:2.5rem}
+.manuscript-nav .button{flex:1 1 210px}
+@media(max-width:720px){.manuscript-nav{display:grid}.manuscript-nav .button{width:100%}}
