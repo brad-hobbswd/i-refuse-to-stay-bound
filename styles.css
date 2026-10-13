@@ -170,3 +170,5 @@ button.button.button-burgundy:not(.menu-toggle):focus-visible {
 .manuscript-nav{display:flex;flex-wrap:wrap;gap:12px;margin-top:2.5rem}
 .manuscript-nav .button{flex:1 1 210px}
 @media(max-width:720px){.manuscript-nav{display:grid}.manuscript-nav .button{width:100%}}
+
+@media(max-width:720px){.manuscript-nav{display:grid}.manuscript-nav .button{width:100%}}
