@@ -243,3 +243,29 @@ button.button.button-burgundy:not(.menu-toggle):focus-visible {
 .content.manuscript em{color:#5d3430}
 .content.manuscript p{overflow-wrap:break-word}
 @media(max-width:620px){.content.manuscript>h2{margin-top:2.1rem;padding-bottom:.4rem}}
+
+
+/* Opening chapter focus: one clear introduction before the manuscript begins. */
+.content.manuscript>.chapter-focus-heading{
+  margin:1.5rem 0 .55rem;
+  padding:0;
+  border:0;
+  color:var(--burgundy);
+  font-family:var(--serif);
+  font-size:1.18rem;
+  line-height:1.35;
+  letter-spacing:.015em;
+}
+.content.manuscript>.chapter-focus{
+  margin:0 0 2rem;
+  padding:1rem 1.15rem;
+  border-left:3px solid var(--gold);
+  border-radius:0 8px 8px 0;
+  background:rgba(201,154,61,.09);
+  color:var(--deep);
+  font-size:1.02rem;
+  line-height:1.75;
+}
+@media(max-width:620px){
+  .content.manuscript>.chapter-focus{padding:.9rem 1rem;font-size:1rem;line-height:1.7}
+}
