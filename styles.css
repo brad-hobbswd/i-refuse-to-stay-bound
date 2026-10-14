@@ -284,3 +284,22 @@ button.button.button-burgundy:not(.menu-toggle):focus-visible {
 @media(max-width:620px){
   .content.manuscript h4{font-size:1rem;line-height:1.45;margin:1.2rem 0 .5rem}
 }
+
+
+/* Responsive chapter study pages: Chapters 23–27 */
+.content-section{width:100%;padding:clamp(28px,5vw,64px) 20px clamp(42px,6vw,76px)}
+.chapter-content{width:100%;max-width:900px;min-width:0;margin:0 auto;overflow-wrap:anywhere;word-wrap:break-word;color:var(--ink);font-size:1.075rem;line-height:1.8}
+.chapter-content p{margin:0 0 1.15rem;font-size:inherit;line-height:inherit}
+.chapter-content .chapter-subtitle{margin:0 auto 1.5rem;max-width:760px;color:var(--muted);font-size:clamp(1.05rem,2vw,1.2rem);font-style:italic;line-height:1.6;text-align:center}
+.chapter-content h2{margin:2.5rem 0 .9rem;color:var(--burgundy);font-family:var(--serif);font-size:clamp(1.45rem,2.7vw,1.9rem);line-height:1.25;overflow-wrap:anywhere;scroll-margin-top:1rem}
+.chapter-content h2:first-of-type{margin-top:1.6rem}
+.chapter-content strong{color:var(--burgundy)}
+.chapter-content ol,.chapter-content ul{padding-left:1.6rem;margin:0 0 1.5rem}
+.chapter-content li{padding-left:.25rem;margin:0 0 .85rem;line-height:1.75}
+.chapter-content .study-questions{padding:1.35rem 1.6rem 1.1rem 3rem;margin:1rem 0 2rem;background:#fffaf0;border:1px solid #e2c98f;border-radius:5px}
+.chapter-content .study-questions li{padding-left:.25rem}
+.chapter-pagination,.chapter-navigation{display:flex;align-items:stretch;justify-content:center;flex-wrap:wrap;gap:12px;width:100%;max-width:900px;margin:2.75rem auto 0;padding-top:1.5rem;border-top:1px solid #e2c98f}
+.chapter-pagination .button,.chapter-navigation .button{flex:0 1 auto;min-width:170px;text-align:center}
+.chapter-content blockquote{margin:1.5rem 0;padding:1rem 1.25rem;border-left:4px solid var(--gold);background:#f5e9d2}
+@media(max-width:720px){.content-section{padding:34px 18px 48px}.chapter-content{font-size:1.02rem;line-height:1.78}.chapter-content h2{margin-top:2.1rem}.chapter-pagination,.chapter-navigation{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;margin-top:2rem}.chapter-pagination .button,.chapter-navigation .button{width:100%;min-width:0}}
+@media(max-width:380px){.content-section{padding-left:14px;padding-right:14px}.chapter-content{font-size:1rem;line-height:1.75}.chapter-content ol,.chapter-content ul{padding-left:1.25rem}.chapter-content .study-questions{padding:1rem 1rem 1rem 2.35rem}.page-hero h1{overflow-wrap:anywhere}}
