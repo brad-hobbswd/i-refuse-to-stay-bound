@@ -374,3 +374,109 @@ hr{border:0;border-top:1px solid var(--site-border);margin:2rem 0}
  html{scroll-behavior:auto}
  *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
 }
+
+
+/* Sitewide consistency and responsive chapter navigation */
+.chapter-pagination,
+.chapter-navigation,
+.manuscript-nav {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+  max-width: 940px;
+  margin: 2.5rem auto 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid #dfc17f;
+}
+.chapter-pagination > a,
+.chapter-navigation > a,
+.manuscript-nav > a {
+  display: inline-flex;
+  flex: 1 1 170px;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  min-height: 48px;
+  padding: 12px 16px;
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  background: var(--burgundy);
+  color: var(--cream);
+  font: 700 .78rem/1.35 var(--sans);
+  letter-spacing: .05em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  box-shadow: 0 3px 8px rgba(59,7,10,.10);
+}
+.chapter-pagination > a:hover,
+.chapter-pagination > a:focus-visible,
+.chapter-navigation > a:hover,
+.chapter-navigation > a:focus-visible,
+.manuscript-nav > a:hover,
+.manuscript-nav > a:focus-visible {
+  background: var(--deep);
+  color: var(--gold-light);
+  border-color: var(--gold-light);
+}
+.chapter-pagination > a:focus-visible,
+.chapter-navigation > a:focus-visible,
+.manuscript-nav > a:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+.chapter-content,
+.content-section,
+.content,
+.manuscript {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.chapter-content img,
+.content img,
+.manuscript img,
+.content-section img {
+  max-width: 100%;
+  height: auto;
+}
+@media (min-width: 721px) and (max-width: 980px) {
+  .chapter-pagination > a,
+  .chapter-navigation > a,
+  .manuscript-nav > a {
+    flex-basis: 190px;
+  }
+}
+@media (max-width: 720px) {
+  .chapter-pagination,
+  .chapter-navigation,
+  .manuscript-nav {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+    margin-top: 2rem;
+  }
+  .chapter-pagination > a,
+  .chapter-navigation > a,
+  .manuscript-nav > a {
+    width: 100%;
+    min-height: 48px;
+  }
+}
+@media (max-width: 380px) {
+  .chapter-pagination,
+  .chapter-navigation,
+  .manuscript-nav {
+    gap: 8px;
+  }
+  .chapter-pagination > a,
+  .chapter-navigation > a,
+  .manuscript-nav > a {
+    padding: 11px 12px;
+    font-size: .74rem;
+  }
+}
