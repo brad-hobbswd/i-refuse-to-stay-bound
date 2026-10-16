@@ -3,57 +3,305 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Learn how the teaching, reflection, affirmations, and prayers in I Refuse to Stay Bound are integrated into its chapters.">
+  <meta name="description" content="Explore Scripture references, a seven day reading journey, church and group study guidance, and further study resources for I Refuse to Stay Bound by Bradley Hobbs.">
+  <meta name="theme-color" content="#3b070a">
   <title>Resources | I Refuse to Stay Bound</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .resource-intro{max-width:820px;margin:0 auto 35px;text-align:center}
+    .resource-intro p{font-size:1.08rem}
+    .resource-section{margin:48px 0;scroll-margin-top:24px}
+    .resource-section>h2{padding-bottom:12px;border-bottom:2px solid #dfc17f}
+    .resource-section>p{max-width:850px}
+    .resource-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:30px 0 45px}
+    .resource-nav a{display:block;padding:17px 19px;background:#fffaf0;border:1px solid #dfc17f;border-left:4px solid #c99a3d;border-radius:4px;color:#650d12;font-weight:bold;text-decoration:none;transition:background .2s ease,transform .2s ease}
+    .resource-nav a:hover,.resource-nav a:focus-visible{background:#f4e7cb;transform:translateY(-2px)}
+    .resource-nav small{display:block;margin-top:5px;color:#6d5b50;font-weight:normal;line-height:1.5}
+    .resource-grid .resource-panel{height:100%}
+    .resource-panel h3{color:#650d12;font-size:1.3rem;line-height:1.3;margin-top:0}
+    .resource-panel p:last-child{margin-bottom:0}
+    .scripture-topic{margin:13px 0;background:#fffaf0;border:1px solid #dfc17f;border-radius:4px;overflow:hidden}
+    .scripture-topic summary{position:relative;padding:17px 44px 17px 19px;color:#650d12;font-size:1.06rem;font-weight:bold;cursor:pointer;list-style:none}
+    .scripture-topic summary::-webkit-details-marker{display:none}
+    .scripture-topic summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);color:#805412;font:bold 1.5rem Arial,sans-serif}
+    .scripture-topic[open] summary::after{content:"−"}
+    .scripture-topic summary:hover{background:#f4e7cb}
+    .scripture-topic summary:focus-visible{outline:3px solid #c99a3d;outline-offset:-3px}
+    .scripture-content{padding:5px 20px 19px;border-top:1px solid #ead9b8}
+    .scripture-content p{margin:12px 0}
+    .scripture-content ul{padding-left:23px}
+    .scripture-content li{margin-bottom:9px}
+    .scripture-reference{color:#650d12;font-weight:bold}
+    .reading-day{display:grid;grid-template-columns:76px minmax(0,1fr);gap:20px;padding:23px 0;border-bottom:1px solid #dfc17f}
+    .reading-day:last-child{border-bottom:0}
+    .reading-number{display:grid;align-content:center;justify-items:center;min-height:76px;padding:8px;background:#650d12;color:#f1d69b;border:1px solid #c99a3d;border-radius:4px;text-align:center;font:bold .8rem Arial,sans-serif;letter-spacing:.04em}
+    .reading-number strong{display:block;font:bold 1.8rem Georgia,serif}
+    .reading-day h3{margin:0 0 8px;color:#650d12;font-size:1.25rem}
+    .reading-day p{margin:7px 0}
+    .resource-callout{margin:26px 0;padding:23px 25px;background:linear-gradient(135deg,#fffaf0,#f4e7cb);border:1px solid #dfc17f;border-left:5px solid #c99a3d;border-radius:4px}
+    .resource-callout h3{margin-top:0;color:#650d12}
+    .resource-callout p:last-child{margin-bottom:0}
+    .study-step{margin:15px 0;padding:20px 22px;background:#fffaf0;border:1px solid #dfc17f;border-radius:4px}
+    .study-step h3{margin:0 0 8px;color:#650d12;font-size:1.18rem}
+    .study-step p{margin-bottom:0}
+    .resource-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}
+    .resource-link-card{padding:23px;background:#fffaf0;border:1px solid #dfc17f;border-radius:4px}
+    .resource-link-card h3{margin-top:0;color:#650d12;font-size:1.22rem}
+    .resource-link-card p{font-size:1rem}
+    .resource-link-card a{font-weight:bold;text-underline-offset:4px}
+    .resource-note{color:#6d5b50;font-size:.96rem!important}
+    .back-to-top{display:inline-block;margin-top:18px;font-weight:bold;text-underline-offset:4px}
+    @media(max-width:620px){.resource-nav,.resource-links{grid-template-columns:1fr}.reading-day{grid-template-columns:58px minmax(0,1fr);gap:13px}.reading-number{min-height:65px}.reading-number strong{font-size:1.5rem}.resource-callout{padding:19px}}
+    @media(prefers-reduced-motion:reduce){.resource-nav a{transition:none}}
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="nav-wrap">
-      <a class="brand" href="index.html"><span>I REFUSE</span><small>TO STAY BOUND</small></a>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu ☰</button>
+      <a class="brand" href="index.html" aria-label="I Refuse to Stay Bound home"><span>I REFUSE</span><small>TO STAY BOUND</small></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu ☰</button>
       <nav id="main-nav" class="main-nav" aria-label="Main navigation">
-        <a href="index.html">Home</a><a href="about.html">About the Book</a><a href="chapter-studies.html">Inside the Chapters</a><a class="active" href="resources.html">Resources</a><a href="author.html">About the Author</a><a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About the Book</a>
+        <a href="chapter-studies.html">Inside the Chapters</a>
+        <a class="active" href="resources.html" aria-current="page">Resources</a>
+        <a href="author.html">About the Author</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
+
   <main id="main">
     <section class="page-hero">
       <p class="eyebrow">A journey shaped by truth and freedom</p>
       <h1>Resources</h1>
-      <p>The primary resource is the book itself, with each chapter bringing its message and practical response together.</p>
+      <p>Continue your journey beyond the page through Scripture, intentional reading, personal application, and deeper study of what it means to walk in the freedom of Jesus Christ.</p>
     </section>
+
     <section class="content">
-      <h2>Everything belongs with the chapter</h2>
-      <p><em>I Refuse to Stay Bound</em> brings its teaching, reflection, affirmations, and prayers into the 27 chapters. The prayers and affirmations, along with the teaching and reflections, are written into the chapters themselves. They are not separate downloadable materials or a second collection that repeats the book’s content; they are part of the chapters and the intended reading experience.</p>
-      <div class="resource-grid">
-        <article class="resource-panel" id="teaching">
-          <h2>Teaching within the chapters</h2>
-          <p>Follow the chapter’s message as it develops, connecting its central teaching with the larger journey toward freedom from offense and bitterness.</p>
-        </article>
-        <article class="resource-panel" id="reflection">
-          <h2>Reflection and application</h2>
-          <p>Pause with the reflection included in the chapter and consider how its message can be lived out with honesty, grace, and wisdom.</p>
-        </article>
-        <article class="resource-panel" id="affirmations">
-          <h2>Affirmations</h2>
-          <p>Use the affirmations within each chapter to revisit its message and keep its truth in view as you continue reading.</p>
-        </article>
-        <article class="resource-panel" id="prayer">
-          <h2>Prayer</h2>
-          <p>Make room for the chapter’s prayer as a personal response to Jesus Christ and an opportunity to bring the matters it addresses before Him.</p>
-        </article>
+      <div class="resource-intro">
+        <p class="eyebrow">Growing in truth. Walking in freedom.</p>
+        <h2>Let the Journey Continue</h2>
+        <p><em>I Refuse to Stay Bound</em> is an invitation to examine the condition of the heart, confront the power of offense, and pursue the freedom that comes through Jesus Christ. Reading is an important beginning, but the message becomes meaningful as we allow truth to shape our choices, relationships, and responses.</p>
+        <p>This resource center accompanies the book with Scripture references, a seven day reading journey, guidance for group study, and suggestions for further exploration. It does not replace the teaching, reflections, prayers, or affirmations already included throughout the chapters.</p>
       </div>
-      <div class="notice"><strong>Publication updates:</strong> Additional information about the book’s release and availability will be shared when those details are finalized.</div>
-      <a class="button button-burgundy" href="chapter-studies.html">Explore How to Read the Chapters →</a>
+
+      <nav class="resource-nav" aria-label="Resources on this page">
+        <a href="#scripture-guide">Scripture Reference Guide<small>Explore biblical passages by subject.</small></a>
+        <a href="#reading-journey">Seven Day Reading Journey<small>Move through the book with intention.</small></a>
+        <a href="#group-study">Church and Group Study<small>Guidance for leaders and participants.</small></a>
+        <a href="#biblical-foundations">Biblical Foundations<small>Consider forgiveness, trust, repentance, and boundaries.</small></a>
+        <a href="#further-study">Further Study<small>Find additional Bible study tools and support.</small></a>
+        <a href="#using-resources">How to Use These Resources<small>Choose an approach that fits your journey.</small></a>
+      </nav>
+
+      <section class="resource-section" id="scripture-guide">
+        <h2>Scripture Reference Guide</h2>
+        <p>Scripture gives us a foundation for examining our hearts, understanding our responsibilities, and seeking the wisdom of God. Use the subjects below to explore passages connected to the central themes of the book.</p>
+        <p class="resource-note">These references are starting points for personal study. Read each passage in its surrounding context, paying attention to whom it addresses and what it teaches.</p>
+
+        <details class="scripture-topic">
+          <summary>Forgiveness and Mercy</summary>
+          <div class="scripture-content">
+            <ul>
+              <li><span class="scripture-reference">Matthew 6:14–15</span> examines forgiveness in the life of a disciple.</li>
+              <li><span class="scripture-reference">Matthew 18:21–35</span> presents Jesus' teaching about forgiveness and mercy.</li>
+              <li><span class="scripture-reference">Ephesians 4:31–32</span> calls believers away from bitterness and toward kindness, compassion, and forgiveness.</li>
+              <li><span class="scripture-reference">Colossians 3:12–13</span> connects compassion, patience, and forgiveness with the life of a believer.</li>
+            </ul>
+            <p>Consider how receiving mercy from God should influence the way you respond to people who have hurt you.</p>
+          </div>
+        </details>
+
+        <details class="scripture-topic">
+          <summary>Offense, Anger, and Bitterness</summary>
+          <div class="scripture-content">
+            <ul>
+              <li><span class="scripture-reference">Hebrews 12:14–15</span> warns against allowing a root of bitterness to grow.</li>
+              <li><span class="scripture-reference">James 1:19–20</span> teaches believers to be quick to hear, slow to speak, and slow to anger.</li>
+              <li><span class="scripture-reference">Proverbs 19:11</span> considers patience and the wisdom of overlooking certain offenses.</li>
+              <li><span class="scripture-reference">Ephesians 4:26–27</span> addresses anger and warns against giving the devil an opportunity.</li>
+            </ul>
+            <p>Examine the difference between acknowledging that something was wrong and allowing resentment to govern your decisions.</p>
+          </div>
+        </details>
+
+        <details class="scripture-topic">
+          <summary>Repentance and Examination of the Heart</summary>
+          <div class="scripture-content">
+            <ul>
+              <li><span class="scripture-reference">Psalm 139:23–24</span> expresses a desire for God to search the heart and lead in the right way.</li>
+              <li><span class="scripture-reference">Psalm 51:10</span> expresses the desire for a clean heart and a renewed spirit.</li>
+              <li><span class="scripture-reference">2 Corinthians 13:5</span> calls believers to examine themselves.</li>
+              <li><span class="scripture-reference">1 John 1:9</span> addresses confession and God's faithfulness to forgive and cleanse.</li>
+            </ul>
+            <p>Ask God to reveal not only the wounds you carry but also the attitudes, words, and actions that require your own repentance.</p>
+          </div>
+        </details>
+
+        <details class="scripture-topic">
+          <summary>Reconciliation, Repentance, and Accountability</summary>
+          <div class="scripture-content">
+            <ul>
+              <li><span class="scripture-reference">Matthew 5:23–24</span> emphasizes taking responsibility for reconciliation with a brother or sister.</li>
+              <li><span class="scripture-reference">Matthew 18:15–17</span> describes a process for addressing wrongdoing within the community of believers.</li>
+              <li><span class="scripture-reference">Luke 17:3–4</span> addresses correction, repentance, and forgiveness.</li>
+              <li><span class="scripture-reference">2 Corinthians 7:9–11</span> discusses godly sorrow and the fruit of repentance.</li>
+            </ul>
+            <p>Consider the difference between offering forgiveness and rebuilding a relationship. Reconciliation requires wisdom, and meaningful restoration may involve repentance, accountability, and changed behavior.</p>
+          </div>
+        </details>
+
+        <details class="scripture-topic">
+          <summary>Wisdom, Boundaries, and Discernment</summary>
+          <div class="scripture-content">
+            <ul>
+              <li><span class="scripture-reference">Proverbs 4:23</span> emphasizes guarding the heart because life flows from it.</li>
+              <li><span class="scripture-reference">Proverbs 22:3</span> considers the wisdom of recognizing danger and responding prudently.</li>
+              <li><span class="scripture-reference">Matthew 10:16</span> calls for both shrewdness and innocence.</li>
+              <li><span class="scripture-reference">Romans 12:18</span> instructs believers to live peaceably with others as far as it depends on them.</li>
+            </ul>
+            <p>Consider how to pursue peace without denying reality, abandoning wisdom, or permitting continued harm.</p>
+          </div>
+        </details>
+
+        <details class="scripture-topic">
+          <summary>Freedom in Jesus Christ</summary>
+          <div class="scripture-content">
+            <ul>
+              <li><span class="scripture-reference">John 8:31–36</span> connects abiding in Jesus' word with truth and freedom.</li>
+              <li><span class="scripture-reference">2 Corinthians 3:17</span> speaks of the Spirit of the Lord and liberty.</li>
+              <li><span class="scripture-reference">Galatians 5:1</span> calls believers to stand firm in the freedom Christ provides.</li>
+              <li><span class="scripture-reference">Romans 8:1–2</span> addresses freedom from condemnation and the law of the Spirit of life in Christ Jesus.</li>
+            </ul>
+            <p>Reflect on the difference between knowing biblical truth intellectually and allowing that truth to shape your daily walk with Jesus.</p>
+          </div>
+        </details>
+
+        <details class="scripture-topic">
+          <summary>Love, Truth, and Christian Character</summary>
+          <div class="scripture-content">
+            <ul>
+              <li><span class="scripture-reference">1 Corinthians 13:4–7</span> describes the character and conduct of love.</li>
+              <li><span class="scripture-reference">Ephesians 4:15</span> speaks of speaking the truth in love.</li>
+              <li><span class="scripture-reference">Micah 6:8</span> emphasizes justice, mercy, and walking humbly with God.</li>
+              <li><span class="scripture-reference">Romans 12:17–21</span> teaches believers not to repay evil for evil and calls them to overcome evil with good.</li>
+            </ul>
+            <p>Examine whether your responses reflect both the truth of God's Word and the character of Jesus Christ.</p>
+          </div>
+        </details>
+
+        <div class="resource-callout">
+          <h3>A Note on Scripture Study</h3>
+          <p>A single verse should not be used to silence someone who has been harmed or to excuse wrongdoing. Read passages in context and consider the full biblical teaching on truth, mercy, justice, repentance, and responsibility.</p>
+        </div>
+        <a class="back-to-top" href="#main">Return to the beginning ↑</a>
+      </section>
+
+      <section class="resource-section" id="reading-journey">
+        <h2>A Seven Day Reading Journey</h2>
+        <p>This seven day reading journey invites you to slow down, engage with the message of <em>I Refuse to Stay Bound</em>, and consider how biblical truth applies to your daily walk with Jesus Christ.</p>
+        <p>Rather than rushing through the book, approach each day with an open heart. Read the assigned portion thoughtfully, examine the Scriptures referenced in the text, and allow yourself time to consider what you are learning.</p>
+        <p class="resource-note">Read the chapters in their published order. Divide the 27 chapters across the seven days according to their length. Some days may require more reading than others. This guide supplements the book and does not replace its existing teaching, reflections, prayers, or affirmations.</p>
+
+        <div class="reading-day"><div class="reading-number">DAY<strong>01</strong></div><div><h3>Begin with an Open Heart</h3><p>Begin with the introduction and the opening portion of the book. Approach the message with a willingness to examine your own heart rather than concentrating only on the faults of others.</p></div></div>
+        <div class="reading-day"><div class="reading-number">DAY<strong>02</strong></div><div><h3>Recognize the Power of Offense</h3><p>Continue reading in the established chapter order. Consider how unresolved hurt, resentment, and personal responses can influence your thoughts, decisions, and relationships.</p></div></div>
+        <div class="reading-day"><div class="reading-number">DAY<strong>03</strong></div><div><h3>Examine Your Own Heart</h3><p>Continue through the next portion of the book. Be willing to recognize attitudes, words, and choices that may need correction. Honest self examination requires humility and a willingness to respond to the truth of God's Word.</p></div></div>
+        <div class="reading-day"><div class="reading-number">DAY<strong>04</strong></div><div><h3>Understand Forgiveness and Responsibility</h3><p>Continue reading and pay attention to what the book teaches about forgiveness, repentance, accountability, and reconciliation. Consider why forgiveness should never be used to excuse wrongdoing or prevent someone from establishing appropriate boundaries.</p></div></div>
+        <div class="reading-day"><div class="reading-number">DAY<strong>05</strong></div><div><h3>Choose Truth Over Bitterness</h3><p>Continue through the manuscript. Reflect on the difference between acknowledging that you have been hurt and allowing that hurt to govern your life. Consider how the truth of Scripture can guide your responses.</p></div></div>
+        <div class="reading-day"><div class="reading-number">DAY<strong>06</strong></div><div><h3>Walk in Wisdom and Freedom</h3><p>Read the next portion of the book, moving toward its conclusion. Consider how your relationship with Jesus Christ should shape your choices, boundaries, relationships, and daily conduct.</p></div></div>
+        <div class="reading-day"><div class="reading-number">DAY<strong>07</strong></div><div><h3>Reflect, Respond, and Continue</h3><p>Complete any remaining chapters. Return to the teaching, Scripture references, prayers, and affirmations that spoke to you most clearly. Consider what you have learned and how you can continue applying biblical truth in your daily walk.</p></div></div>
+
+        <div class="resource-callout">
+          <h3>Seven Days to Begin. A Lifetime of Growth.</h3>
+          <p>The purpose of this journey is not simply to finish a book in seven days. It is to create space for honest reflection, biblical understanding, and meaningful personal application. If you need additional time, take it. Spiritual growth is not a race.</p>
+          <p>Let the message move beyond the page and into the way you live, respond, forgive, exercise wisdom, and walk with Jesus Christ.</p>
+        </div>
+        <a class="button button-burgundy" href="chapter-studies.html">Explore Inside the Chapters →</a>
+      </section>
+
+      <section class="resource-section" id="group-study">
+        <h2>Church and Small Group Study</h2>
+        <p><em>I Refuse to Stay Bound</em> may serve as a starting point for conversations about forgiveness, offense, bitterness, accountability, and spiritual freedom. This framework can help pastors, teachers, and group facilitators create thoughtful discussions without duplicating the chapter material.</p>
+
+        <div class="study-step"><h3>1. Establish the Purpose</h3><p>Explain that the goal is to examine Scripture, consider personal responsibility, and grow in the character of Jesus Christ. The group is not a place to identify, accuse, or publicly confront other people.</p></div>
+        <div class="study-step"><h3>2. Read the Assigned Chapter</h3><p>Ask participants to read the selected chapter before meeting when possible. During the session, focus on the chapter's existing teaching and biblical foundations.</p></div>
+        <div class="study-step"><h3>3. Examine the Scripture</h3><p>Read the biblical passages in context. Invite participants to consider what the text actually teaches and how it relates to the subject under discussion.</p></div>
+        <div class="study-step"><h3>4. Encourage Honest Reflection</h3><p>Allow participants to think privately before sharing. Personal disclosure should remain voluntary. No one should be pressured to recount painful experiences or reveal confidential details.</p></div>
+        <div class="study-step"><h3>5. Distinguish Forgiveness from Reconciliation</h3><p>Make room for an honest discussion about repentance, trust, accountability, and safety. Do not suggest that forgiveness requires a person to remain in a harmful situation or immediately restore a relationship.</p></div>
+        <div class="study-step"><h3>6. Encourage Practical Application</h3><p>Invite participants to identify a personal next step related to their own choices, attitudes, or boundaries. Keep the emphasis on personal application rather than trying to control another person's response.</p></div>
+        <div class="study-step"><h3>7. Close with Prayer</h3><p>Allow time for prayer using the prayer already included in the assigned chapter. Respect participants who prefer to pray privately or who are not ready to share aloud.</p></div>
+
+        <div class="resource-callout">
+          <h3>Guidance for Group Leaders</h3>
+          <p>Protect confidentiality while explaining its limits when safety concerns arise. Do not use forgiveness teaching to silence reports of abuse, discourage appropriate reporting, or shield leaders from accountability. When serious harm is disclosed, respond with care and help the person access appropriate support.</p>
+        </div>
+      </section>
+
+      <section class="resource-section" id="biblical-foundations">
+        <h2>Understanding Biblical Forgiveness and Freedom</h2>
+        <p>Some of the most difficult conversations about forgiveness arise when biblical principles are confused with expectations that Scripture does not require in every circumstance. These distinctions can help readers study the subject carefully.</p>
+
+        <div class="resource-grid">
+          <article class="resource-panel"><h3>Forgiveness and Reconciliation</h3><p>Forgiveness and reconciliation are related, but they are not identical. Reconciliation concerns the restoration of a relationship. Rebuilding a damaged relationship may require honesty, repentance, accountability, and time.</p><p><strong>Study:</strong> Matthew 18:15–17 and Romans 12:18.</p></article>
+          <article class="resource-panel"><h3>Forgiveness and Trust</h3><p>Forgiveness does not automatically establish that another person is trustworthy. Trust develops through demonstrated honesty, responsibility, consistency, and changed behavior.</p><p><strong>Study:</strong> Proverbs 22:3 and Luke 17:3–4.</p></article>
+          <article class="resource-panel"><h3>Grace and Accountability</h3><p>Grace is not permission to continue wrongdoing. Biblical mercy must not become an excuse to avoid repentance or the consequences of harmful choices.</p><p><strong>Study:</strong> 2 Corinthians 7:9–11 and Galatians 6:1.</p></article>
+          <article class="resource-panel"><h3>Peace and Boundaries</h3><p>Pursuing peace does not mean pretending that harm never happened. Wise boundaries can coexist with a sincere desire to avoid retaliation and pursue what is right.</p><p><strong>Study:</strong> Romans 12:17–21 and Proverbs 4:23.</p></article>
+          <article class="resource-panel"><h3>Love and Truth</h3><p>Christian love is not the denial of truth. Speaking honestly, correcting wrongdoing appropriately, and treating people with dignity belong together.</p><p><strong>Study:</strong> Ephesians 4:15 and 1 Corinthians 13:4–7.</p></article>
+          <article class="resource-panel"><h3>Freedom and Personal Responsibility</h3><p>Spiritual freedom is not permission to act without wisdom. It calls believers to let the truth of Jesus Christ shape their decisions, conduct, and treatment of others.</p><p><strong>Study:</strong> John 8:31–36 and Galatians 5:1.</p></article>
+        </div>
+      </section>
+
+      <section class="resource-section" id="further-study">
+        <h2>Further Study and Support</h2>
+        <p>The following resources can help readers explore Scripture and seek appropriate assistance when a situation requires more than personal reflection.</p>
+
+        <div class="resource-links">
+          <article class="resource-link-card"><h3>Bible Gateway</h3><p>Look up Scripture references, compare Bible translations, and read passages in their surrounding context.</p><a href="https://www.biblegateway.com/" target="_blank" rel="noopener noreferrer">Explore Bible Gateway →</a></article>
+          <article class="resource-link-card"><h3>YouVersion Bible</h3><p>Access an online Bible and explore reading plans for continued personal study.</p><a href="https://www.bible.com/" target="_blank" rel="noopener noreferrer">Explore YouVersion →</a></article>
+          <article class="resource-link-card"><h3>Pastoral Care and Accountability</h3><p>Consider speaking with a trustworthy, accountable pastor or ministry leader when spiritual guidance would be helpful. Choose someone who respects appropriate boundaries and takes concerns seriously.</p></article>
+          <article class="resource-link-card"><h3>Professional Support</h3><p>If betrayal, abuse, trauma, or ongoing conflict is affecting your well-being, a qualified mental health professional or appropriate support organization may help you work through the situation safely.</p></article>
+        </div>
+        <p class="resource-note">External websites are independently operated and may change their content, availability, or policies. Their inclusion does not imply endorsement of every resource they provide.</p>
+      </section>
+
+      <section class="resource-section" id="using-resources">
+        <h2>How to Use These Resources</h2>
+        <div class="resource-grid">
+          <article class="resource-panel"><h3>For Personal Study</h3><p>Read the book at your own pace. Use the Scripture Reference Guide when you want to examine a particular subject more closely. Return to the existing prayers and reflections within the chapters as needed.</p></article>
+          <article class="resource-panel"><h3>For Church and Group Study</h3><p>Use the Guided Reading Journey to organize the reading schedule and the group study framework to guide discussion. Keep Scripture and the book's actual teaching at the center of each meeting.</p></article>
+          <article class="resource-panel"><h3>For Further Biblical Exploration</h3><p>Follow the references in the Scripture guide. Read the complete passages, compare translations when helpful, and consider the wider biblical context.</p></article>
+          <article class="resource-panel"><h3>For Continued Growth</h3><p>Return to the resources whenever you need to revisit a subject. Growth is not measured only by how quickly a book is completed, but also by how faithfully its truth informs daily life.</p></article>
+        </div>
+      </section>
+
+      <section class="resource-section">
+        <div class="resource-callout">
+          <h2>Continue the Journey</h2>
+          <p>The resources on this page are here to support your engagement with the book, not replace it. The heart of the journey remains the same: to confront what keeps us bound, examine ourselves honestly before God, and pursue a life shaped by the truth and freedom found in Jesus Christ.</p>
+          <p>Continue reading. Continue studying the Word. Continue allowing God to work in your heart.</p>
+          <a class="button button-burgundy" href="chapter-studies.html">Return to Inside the Chapters →</a>
+          <a class="button button-light" href="about.html">Learn About the Book →</a>
+        </div>
+      </section>
     </section>
   </main>
+
   <footer class="site-footer">
     <div class="footer-inner">
       <a class="brand footer-brand" href="index.html"><span>I REFUSE</span><small>TO STAY BOUND</small></a>
       <p>Overcoming offense. Releasing bitterness. Walking in the freedom of Jesus Christ.</p>
-      <nav aria-label="Footer navigation"><a href="about.html">About the Book</a><a href="chapter-studies.html">Inside the Chapters</a><a href="resources.html">Resources</a><a href="author.html">About the Author</a><a href="contact.html">Contact</a><a href="copyright.html">Copyright</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+      <nav aria-label="Footer navigation">
+        <a href="about.html">About the Book</a>
+        <a href="chapter-studies.html">Inside the Chapters</a>
+        <a href="resources.html" aria-current="page">Resources</a>
+        <a href="author.html">About the Author</a>
+        <a href="contact.html">Contact</a>
+        <a href="copyright.html">Copyright</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
       <small class="copyright">© <span id="year">2026</span> Bradley Hobbs. All rights reserved.</small>
     </div>
   </footer>
