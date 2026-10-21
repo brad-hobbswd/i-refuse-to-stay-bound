@@ -104,6 +104,18 @@
     .curriculum-subheading{margin-bottom:8px}
     @media(max-width:620px){.curriculum-lesson summary{grid-template-columns:1fr auto;gap:5px 12px;padding:16px}.lesson-week{grid-column:1 / -1}.lesson-summary-title{font-size:1.04rem}.lesson-summary-action{font-size:.72rem}.curriculum-lesson-body{padding:0 14px 14px}}
     @media(prefers-reduced-motion:reduce){.curriculum-lesson summary{scroll-behavior:auto}}
+
+    /* Seven day journey cards: use the available desktop width, then adapt for smaller screens. */
+    .reading-journey-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch;margin:28px 0}
+    .reading-journey-card{display:flex;flex-direction:column;min-width:0;padding:24px;background:#fffaf0;border:1px solid #dfc17f;border-top:5px solid #650d12;border-radius:7px;box-shadow:0 7px 20px rgba(59,7,10,.08)}
+    .reading-journey-card-header{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+    .reading-journey-card-header .reading-number{flex:0 0 66px;min-height:70px}
+    .reading-journey-card-header h3{margin:0;color:#650d12;font-size:1.22rem;line-height:1.35}
+    .reading-journey-card .day-focus{margin:0 0 12px;color:#805412;font:bold .78rem Arial,sans-serif;letter-spacing:.07em;text-transform:uppercase}
+    .reading-journey-card>p:last-child{margin:0;line-height:1.75}
+    @media(min-width:1000px){.reading-journey-card{padding:26px}.reading-journey-card-header h3{font-size:1.28rem}}
+    @media(max-width:900px){.reading-journey-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.reading-journey-card{padding:20px}}
+    @media(max-width:620px){.reading-journey-grid{grid-template-columns:minmax(0,1fr);gap:14px}.reading-journey-card{padding:19px}.reading-journey-card-header h3{font-size:1.15rem}}
   </style>
 
   <script type="application/ld+json">
