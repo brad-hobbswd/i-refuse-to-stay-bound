@@ -20,22 +20,23 @@
   <meta name="twitter:image" content="https://brad-hobbswd.github.io/i-refuse-to-stay-bound/assets/CD4BD753-F516-42A1-8781-B7D428147069.png">
   <link rel="stylesheet" href="styles.css">
   <style>
-    .author-intro{max-width:1040px;margin:0 auto;padding:48px 24px;display:grid;grid-template-columns:minmax(180px,280px) minmax(0,1fr);gap:42px;align-items:center}
+    .author-page-content{max-width:none;margin:0;padding:0 0 60px;background:var(--cream)}
+    .author-intro{width:100%;margin:0 auto 44px;padding:48px max(24px,calc((100% - 1040px)/2));display:grid;grid-template-columns:minmax(180px,280px) minmax(0,1fr);gap:42px;align-items:center;background:#f4e7cb;border-bottom:1px solid #e5c98c}
     .author-cover{display:flex;justify-content:center;max-width:none;margin:0;padding:0;background:none;border:0;border-radius:0;box-shadow:none}
     .author-cover img{display:block;width:100%;max-width:270px;height:auto;object-fit:contain;filter:drop-shadow(0 16px 20px rgba(35,5,8,.24));border-radius:3px}
     .author-copy p,.author-section p,.author-callout p{line-height:1.8}
-    .author-section{margin-top:clamp(2rem,4vw,3.5rem);padding-top:clamp(1.25rem,3vw,2rem);border-top:1px solid #dfc17f}
+    .author-section{max-width:940px;margin:clamp(2rem,4vw,3.5rem) auto 0;padding:clamp(1.25rem,3vw,2rem) 24px 0;border-top:1px solid #dfc17f}
     .author-section h2,.author-copy h2{margin-top:0}
     .author-values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:1.25rem}
     .author-value{padding:1.25rem;background:#fffaf0;border:1px solid #dfc17f;border-radius:4px;box-shadow:0 5px 18px rgba(59,7,10,.05)}
     .author-value h3{margin-top:0;color:var(--burgundy)}
     .author-value p{margin-bottom:0}
-    .author-callout{margin-top:2rem;padding:clamp(1.5rem,4vw,2.25rem);border-radius:4px;background:linear-gradient(120deg,#3b070a,#650d12,#3b070a);border:1px solid #c99a3d;border-top:3px solid #c99a3d;color:#fff8e9}
+    .author-callout{max-width:892px;margin:2rem auto 0;padding:clamp(1.5rem,4vw,2.25rem);border-radius:4px;background:linear-gradient(120deg,#3b070a,#650d12,#3b070a);border:1px solid #c99a3d;border-top:3px solid #c99a3d;color:#fff8e9}
     .author-callout h2{color:#f1d69b;margin-top:0}
     .author-callout a:not(.button){color:#f8dfa7;text-underline-offset:4px}
     .author-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:1.25rem}
     .author-actions a{margin:0}
-    @media(max-width:620px){.author-intro{grid-template-columns:1fr;gap:24px;padding:36px 20px}.author-cover img{max-width:220px}.author-values{grid-template-columns:1fr}.author-actions{flex-direction:column;align-items:flex-start}}
+    @media(max-width:620px){.author-intro{grid-template-columns:1fr;gap:24px;padding:36px 20px;margin-bottom:32px}.author-cover img{max-width:220px}.author-values{grid-template-columns:1fr}.author-section{padding-left:20px;padding-right:20px}.author-callout{margin-left:20px;margin-right:20px}.author-actions{flex-direction:column;align-items:flex-start}}
   </style>
   <script type="application/ld+json">
   {
@@ -70,7 +71,7 @@
       <h1>Meet Bradley Hobbs</h1>
       <p>Faith, learning, and a desire to serve shape the heart behind the writing.</p>
     </section>
-    <article class="content">
+    <article class="author-page-content">
       <section class="author-intro" aria-labelledby="author-story">
         <div class="author-cover">
           <img src="assets/CD4BD753-F516-42A1-8781-B7D428147069.png" alt="Cover of I Refuse to Stay Bound by Bradley Hobbs">
