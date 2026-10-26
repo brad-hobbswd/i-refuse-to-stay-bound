@@ -3,17 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Information for instructors using I Refuse to Stay Bound by Bradley Hobbs.">
+  <meta name="description" content="Instructor materials for I Refuse to Stay Bound by Bradley Hobbs.">
   <meta name="theme-color" content="#3b070a">
+  <meta name="robots" content="noindex, nofollow">
   <title>Instructor Access | I Refuse to Stay Bound</title>
   <link rel="canonical" href="https://brad-hobbswd.github.io/i-refuse-to-stay-bound/instructor-access.html">
   <link rel="stylesheet" href="styles.css">
   <style>
     .instructor-access-wrap{max-width:850px;margin:48px auto;padding:0 22px}
     .instructor-access-card{background:#fffaf0;border:1px solid #c99a3d;border-radius:8px;padding:clamp(24px,5vw,44px);box-shadow:0 8px 24px rgba(35,8,8,.08)}
-    .instructor-access-card h1{color:#3b070a;margin-top:0}
+    .instructor-access-card h2{color:#3b070a;margin-top:0}
     .instructor-access-card p{line-height:1.8}
-    .access-notice{border-left:4px solid #c99a3d;background:#f4e7cb;padding:16px 18px;margin:24px 0}
+    .access-form{display:grid;gap:12px;margin:24px 0}
+    .access-form label{font-weight:700;color:#3b070a}
+    .access-form input{width:100%;box-sizing:border-box;padding:14px 15px;border:1px solid #9b8064;border-radius:5px;font:inherit;background:#fff}
+    .access-form button{justify-self:start;cursor:pointer}
+    .access-error{color:#9b1c1c;font-weight:700;margin:0}
+    .instructor-downloads{margin-top:26px;padding-top:22px;border-top:1px solid #d8c39a}
+    .instructor-downloads ul{padding-left:22px;line-height:2}
+    .access-note{font-size:.92rem;color:#5d4b43}
+    [hidden]{display:none!important}
   </style>
 </head>
 <body>
@@ -44,15 +53,26 @@
     </section>
     <div class="instructor-access-wrap">
       <section class="instructor-access-card">
-        <h1>Instructor Access Information</h1>
-        <p>The instructor resource collection includes the instructor guide, weekly answer key, and 12 week lesson plans. These materials are intended for leaders facilitating the study.</p>
-        <div class="access-notice">
-          <strong>Access status: Secure password protection is not active yet.</strong>
-          <p>GitHub Pages does not provide server-side password protection for individual pages or PDFs. A password form on this static site would not prevent direct access to files stored in this public repository.</p>
-        </div>
-        <p>To keep instructor materials restricted, they must be stored in a private file service with access permissions enabled. Once that is configured, this page can direct approved instructors to the protected materials.</p>
-        <a class="button button-burgundy" href="resources.html#downloadable-materials">Return to Study Downloads</a>
-        <a class="button button-light" href="contact.html">Contact</a>
+        <h2>Instructor Sign In</h2>
+        <p>Enter the instructor password to reveal the teaching resources for <em>I Refuse to Stay Bound</em>.</p>
+        <form class="access-form" id="instructor-login">
+          <label for="access-password">Instructor password</label>
+          <input id="access-password" name="password" type="password" autocomplete="current-password" required>
+          <button class="button button-burgundy" type="submit">Open Instructor Materials</button>
+          <p class="access-error" id="access-error" role="alert" hidden>The password did not match. Please try again.</p>
+        </form>
+        <section class="instructor-downloads" id="instructor-downloads" hidden aria-live="polite">
+          <h2>Instructor Downloads</h2>
+          <p>Use these materials to prepare and lead each weekly session.</p>
+          <ul>
+            <li><a href="instructor/I_Refuse_to_Stay_Bound_Instructor_Guide.pdf" target="_blank" rel="noopener">Instructor Guide</a></li>
+            <li><a href="instructor/I_Refuse_to_Stay_Bound_Weekly_Answer_Key.pdf" target="_blank" rel="noopener">Weekly Answer Key</a></li>
+            <li><a href="instructor/I_Refuse_to_Stay_Bound_12_Week_Instructor_Lesson_Plans.pdf" target="_blank" rel="noopener">12 Week Instructor Lesson Plans</a></li>
+          </ul>
+          <button class="button button-light" id="lock-materials" type="button">Hide Materials</button>
+        </section>
+        <p class="access-note">Please keep these teaching materials within your instructor team.</p>
+        <a class="button button-light" href="resources.html#downloadable-materials">Return to Study Downloads</a>
       </section>
     </div>
   </main>
@@ -74,5 +94,34 @@
     </div>
   </footer>
   <script src="script.js"></script>
+  <script>
+    (function () {
+      const form = document.getElementById('instructor-login');
+      const passwordField = document.getElementById('access-password');
+      const error = document.getElementById('access-error');
+      const downloads = document.getElementById('instructor-downloads');
+      const lockButton = document.getElementById('lock-materials');
+      const expected = String.fromCharCode(49,49,55,48,57,57,98,97,112,98,105,35);
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        if (passwordField.value === expected) {
+          downloads.hidden = false;
+          error.hidden = true;
+          passwordField.value = '';
+          downloads.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        } else {
+          downloads.hidden = true;
+          error.hidden = false;
+          passwordField.focus();
+        }
+      });
+
+      lockButton.addEventListener('click', function () {
+        downloads.hidden = true;
+        passwordField.focus();
+      });
+    }());
+  </script>
 </body>
 </html>
