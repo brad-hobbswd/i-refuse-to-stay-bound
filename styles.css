@@ -489,7 +489,37 @@ hr{border:0;border-top:1px solid var(--site-border);margin:2rem 0}
 .manuscript figure.chapter-inline-illustration img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;}
 .manuscript figure.chapter-inline-illustration figcaption{margin-top:.55rem;color:var(--muted,#5e5348);font-size:.82rem;line-height:1.5;font-style:italic;}
 .manuscript>h2{clear:both;}
-@media(max-width:680px){.manuscript figure.chapter-inline-illustration,.manuscript figure.chapter-inline-illustration.image-left,.manuscript figure.chapter-inline-illustration.image-right{float:none;width:min(100%,360px);margin:1.2rem auto;clear:both;}}
+/* Responsive chapter illustrations: preserve text wrapping on tablets and phones. */
+@media(max-width:680px){
+  .manuscript figure.chapter-inline-illustration,
+  .manuscript figure.chapter-inline-illustration.image-left,
+  .manuscript figure.chapter-inline-illustration.image-right{
+    box-sizing:border-box;
+    width:min(42%,170px);
+    margin:.35rem 0 .9rem;
+    clear:none;
+  }
+  .manuscript figure.chapter-inline-illustration.image-left{float:left;margin-right:.85rem;}
+  .manuscript figure.chapter-inline-illustration.image-right{float:right;margin-left:.85rem;}
+  .manuscript figure.chapter-inline-illustration figcaption{
+    font-size:.72rem;
+    line-height:1.4;
+    overflow-wrap:anywhere;
+    hyphens:auto;
+  }
+  .manuscript p{overflow-wrap:break-word;}
+}
+@media(max-width:380px){
+  .manuscript figure.chapter-inline-illustration,
+  .manuscript figure.chapter-inline-illustration.image-left,
+  .manuscript figure.chapter-inline-illustration.image-right{
+    width:40%;
+    max-width:140px;
+  }
+  .manuscript figure.chapter-inline-illustration.image-left{margin-right:.65rem;}
+  .manuscript figure.chapter-inline-illustration.image-right{margin-left:.65rem;}
+  .manuscript figure.chapter-inline-illustration figcaption{font-size:.68rem;}
+}
 
 
 /* Companion study guides */
